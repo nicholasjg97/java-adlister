@@ -1,17 +1,17 @@
 package com.codeup.adlister.dao;
 
+import com.codeup.adlister.Config;
 import com.codeup.adlister.models.User;
 import com.mysql.jdbc.Driver;
 
 
-import javax.servlet.jsp.jstl.core.Config;
 import java.sql.*;
 
 public class MySQLUsersDao implements Users {
 
     private Connection connection = null;
 
-    public MySQLAdsDao (Config config) {
+    public MySQLUsersDao (Config config) {
 
         try {
             DriverManager.registerDriver(new Driver());
